@@ -1,5 +1,7 @@
 #!/bin/bash
 isExistApp=$(ps -ef | grep npm | grep -v grep)
-if [[ -n  $isExistApp ]]; then
+if [[ -z  $isExistApp ]]; then
+    echo "node not running"
+else
     killall -9 node      
 fi
