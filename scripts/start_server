@@ -1,3 +1,4 @@
 #!/bin/bash
-npm start
+cd /home/ec2-user/pipeline-deploy
+npm start > log 2>&1 &
 

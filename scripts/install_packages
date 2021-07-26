@@ -1,3 +1,4 @@
 #!/bin/bash
+cd /home/ec2-user/pipeline-deploy
 npm install
-zip test.zip *
+zip /home/ec2-user/pipeline-deploy/test.zip /home/ec2-user/pipeline-deploy/*
