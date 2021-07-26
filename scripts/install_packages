@@ -2,3 +2,4 @@
 cd /home/ec2-user/pipeline-deploy
 npm install
 zip /home/ec2-user/pipeline-deploy/test.zip /home/ec2-user/pipeline-deploy/*
+aws s3 cp /home/ec2-user/pipeline-deploy/test s3://pipeline2-test-repo/ --recursive
