@@ -1,8 +1,0 @@
-#!/bin/bash
-cat ./scripts/stop_server
-isExistApp=$(ps -ef | grep npm | grep -v grep)
-if [[ -z  $isExistApp ]]; then
-    echo "node not running"
-else
-    killall -9 node      
-fi
